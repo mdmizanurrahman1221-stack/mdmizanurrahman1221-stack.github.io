@@ -4,141 +4,451 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mizanur Rahman | Freelancer</title>
+
+<title>Mizanur Rahman | Creative Freelancer</title>
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  font-family:Arial,sans-serif;
-  background:#0b0b14;color:#fff;
-  line-height:1.7;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-nav{
-  display:flex;justify-content:space-between;
-  align-items:center;padding:22px 8%;
-  background:#11111c;position:sticky;top:0;
-  z-index:10;
+
+html {
+  scroll-behavior: smooth;
 }
-.logo{font-size:23px;font-weight:bold;color:#a78bfa}
-nav a{color:white;text-decoration:none;margin-left:22px}
-.hero{
-  min-height:85vh;display:flex;
-  flex-direction:column;justify-content:center;
-  align-items:center;text-align:center;padding:40px 20px;
-  background:radial-gradient(circle at top,#302052,#0b0b14 65%);
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0b0b14;
+  color: #fff;
+  line-height: 1.7;
 }
-.tag{color:#a78bfa;margin-bottom:20px}
-h1{font-size:clamp(38px,7vw,65px);line-height:1.2}
-h1 span,h2 span{color:#a78bfa}
-.hero p{color:#b8b8c8;max-width:600px;margin:22px auto}
-.btn{
-  display:inline-block;background:#8b5cf6;color:white;
-  padding:13px 27px;border-radius:8px;
-  text-decoration:none;margin:10px;
+
+/* NAVIGATION */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 8%;
+  background: #11111c;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
-section{padding:85px 10%;text-align:center}
-h2{font-size:36px;margin-bottom:25px}
-.description{color:#b8b8c8;max-width:700px;margin:auto}
-.cards{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:22px;margin-top:35px;
+
+.logo {
+  font-size: 23px;
+  font-weight: bold;
+  color: #a78bfa;
 }
-.card{
-  background:#171725;padding:30px 20px;
-  border:1px solid #29283a;border-radius:14px;
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 22px;
+  transition: 0.3s;
 }
-.card h3{color:#a78bfa;margin-bottom:12px}
-.card p{color:#b8b8c8}
-.skills{margin-top:30px;color:#d8c8ff}
-.contact{background:#11111c}
-footer{padding:25px;text-align:center;color:#888}
-@media(max-width:600px){
- nav{padding:18px 5%;flex-direction:column;gap:12px}
- nav a{margin:0 7px;font-size:13px}
- section{padding:65px 6%}
+
+nav a:hover {
+  color: #a78bfa;
 }
+
+/* HERO */
+
+.hero {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  background: radial-gradient(
+    circle at top,
+    #302052,
+    #0b0b14 65%
+  );
+}
+
+.tag {
+  color: #a78bfa;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: clamp(38px, 7vw, 65px);
+  line-height: 1.2;
+}
+
+h1 span,
+h2 span {
+  color: #a78bfa;
+}
+
+.hero h2 {
+  margin-top: 15px;
+}
+
+.hero p {
+  color: #b8b8c8;
+  max-width: 650px;
+  margin: 22px auto;
+}
+
+.btn {
+  display: inline-block;
+  background: #8b5cf6;
+  color: white;
+  padding: 13px 27px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #7040d8;
+  transform: translateY(-3px);
+}
+
+/* GENERAL SECTIONS */
+
+section {
+  padding: 85px 10%;
+  text-align: center;
+  scroll-margin-top: 75px;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 25px;
+}
+
+.description {
+  color: #b8b8c8;
+  max-width: 750px;
+  margin: auto;
+}
+
+/* SERVICES */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(220px, 1fr)
+  );
+  gap: 22px;
+  margin-top: 35px;
+}
+
+.card {
+  background: #171725;
+  padding: 30px 20px;
+  border: 1px solid #29283a;
+  border-radius: 14px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  border-color: #a78bfa;
+  background: #211b35;
+}
+
+.card h3 {
+  color: #a78bfa;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #b8b8c8;
+}
+
+/* SKILLS */
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.skill {
+  background: #211b35;
+  border: 1px solid #7651bd;
+  padding: 12px 22px;
+  border-radius: 30px;
+  color: #d8c8ff;
+}
+
+/* CONTACT */
+
+.contact {
+  background: #11111c;
+}
+
+.contact-links {
+  margin-top: 25px;
+}
+
+.contact-links a {
+  display: inline-block;
+  color: white;
+  background: #8b5cf6;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 8px;
+}
+
+.contact-links a:hover {
+  background: #7040d8;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 25px;
+  text-align: center;
+  color: #888;
+  background: #0b0b14;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width: 600px) {
+
+  nav {
+    padding: 18px 5%;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  nav a {
+    margin: 0 7px;
+    font-size: 13px;
+  }
+
+  section {
+    padding: 65px 6%;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .hero {
+    min-height: 75vh;
+  }
+}
+
 </style>
 </head>
+
 <body>
+
+<!-- NAVIGATION -->
 
 <nav>
   <div class="logo">MIZANUR.</div>
+
   <div>
     <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#services">Services</a>
+    <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
 
+<!-- HOME SECTION -->
+
 <div class="hero" id="home">
-  <div class="tag">✦ WELCOME TO MY PORTFOLIO</div>
-  <h1>Hi, I'm <span>Mizanur Rahman</span></h1>
+
+  <div class="tag">
+    ✦ WELCOME TO MY PORTFOLIO
+  </div>
+
+  <h1>
+    Hi, I'm <span>Mizanur Rahman</span>
+  </h1>
+
   <h2>Professional Freelancer</h2>
+
   <p>
-    I am a passionate freelancer dedicated to
-    providing quality digital services and helping
-    businesses grow.
+    I am a creative freelancer specializing in
+    Canva Design, Social Media Management and
+    Motion Graphics. I help businesses build
+    their online presence with creative digital content.
   </p>
-  <a class="btn" href="#contact">Hire Me →</a>
-  <a class="btn" href="#about">About Me</a>
+
+  <a class="btn" href="#contact">
+    Hire Me →
+  </a>
+
+  <a class="btn" href="#about">
+    About Me
+  </a>
+
 </div>
 
+<!-- ABOUT SECTION -->
+
 <section id="about">
+
   <h2>About <span>Me</span></h2>
+
   <p class="description">
-    Hello! I'm Mizanur Rahman.
-    I am a dedicated freelancer who loves learning
-    new skills, working on creative projects and
-    delivering quality work.
-    My goal is to help clients achieve their goals
-    through professional service.
+
+    Hello! I'm Mizanur Rahman, a passionate
+    Professional Freelancer.
+
+    I have intermediate experience in Canva Design,
+    Social Media Management and Motion Graphics.
+
+    I enjoy creating attractive designs,
+    managing social media platforms and
+    producing engaging motion graphics.
+
+    My goal is to help businesses grow
+    through creative digital solutions.
+
   </p>
+
 </section>
+
+<!-- SERVICES SECTION -->
 
 <section id="services">
+
   <h2>My <span>Services</span></h2>
+
+  <p class="description">
+    I provide creative digital services
+    to help brands and businesses grow.
+  </p>
+
   <div class="cards">
+
     <div class="card">
-      <h3>Digital Services</h3>
-      <p>Professional digital solutions for your needs.</p>
+
+      <h3>🎨 Canva Design</h3>
+
+      <p>
+        Creative social media posts,
+        banners, flyers, thumbnails
+        and promotional graphics.
+      </p>
+
     </div>
+
     <div class="card">
-      <h3>Freelance Support</h3>
-      <p>Reliable support for your projects and business.</p>
+
+      <h3>📱 Social Media Management</h3>
+
+      <p>
+        Social media content planning,
+        page management and audience
+        engagement.
+      </p>
+
     </div>
+
     <div class="card">
-      <h3>Creative Work</h3>
-      <p>Creative ideas and quality-focused work.</p>
+
+      <h3>🎬 Motion Graphics</h3>
+
+      <p>
+        Eye-catching animations,
+        motion designs and
+        promotional videos.
+      </p>
+
     </div>
+
   </div>
+
 </section>
+
+<!-- SKILLS SECTION -->
 
 <section id="skills">
+
   <h2>My <span>Skills</span></h2>
+
   <p class="description">
-    I believe in continuous learning, creativity,
-    communication and delivering quality work.
+    My creative skills and professional abilities.
   </p>
+
   <div class="skills">
-    Creativity &nbsp; • &nbsp; Communication
-    &nbsp; • &nbsp; Problem Solving
+
+    <div class="skill">
+      Canva Design
+    </div>
+
+    <div class="skill">
+      Social Media Management
+    </div>
+
+    <div class="skill">
+      Motion Graphics
+    </div>
+
+    <div class="skill">
+      Creative Design
+    </div>
+
+    <div class="skill">
+      Content Creation
+    </div>
+
   </div>
+
 </section>
+
+<!-- CONTACT SECTION -->
 
 <section class="contact" id="contact">
-  <h2>Let's Work <span>Together</span></h2>
+
+  <h2>
+    Let's Work <span>Together</span>
+  </h2>
+
   <p class="description">
-    Have a project in mind? Let's discuss how
-    we can work together.
+    Have a project in mind?
+    Let's create something amazing together!
+    Feel free to contact me.
   </p>
-  <a class="btn" href="mailto:YOUR_EMAIL@gmail.com">
-    Contact Me ✉
-  </a>
+
+  <div class="contact-links">
+
+    <!-- Replace with your real email -->
+
+    <a href="mailto:YOUR_mdmizanurrahman1221@gmail.com">
+      ✉ Email Me
+    </a>
+
+  </div>
+
 </section>
 
+<!-- FOOTER -->
+
 <footer>
-  © 2026 Mizanur Rahman. All Rights Reserved.
+
+  <p>
+    © 2026 Mizanur Rahman.
+    All Rights Reserved.
+  </p>
+
+  <p>
+    Designed with ❤️ by Mizanur Rahman
+  </p>
+
 </footer>
 
 </body>
