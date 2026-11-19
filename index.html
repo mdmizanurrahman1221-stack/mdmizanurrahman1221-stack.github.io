@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mizanur Rahman | Freelancer</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:Arial,sans-serif;
+  background:#0b0b14;color:#fff;
+  line-height:1.7;
+}
+nav{
+  display:flex;justify-content:space-between;
+  align-items:center;padding:22px 8%;
+  background:#11111c;position:sticky;top:0;
+  z-index:10;
+}
+.logo{font-size:23px;font-weight:bold;color:#a78bfa}
+nav a{color:white;text-decoration:none;margin-left:22px}
+.hero{
+  min-height:85vh;display:flex;
+  flex-direction:column;justify-content:center;
+  align-items:center;text-align:center;padding:40px 20px;
+  background:radial-gradient(circle at top,#302052,#0b0b14 65%);
+}
+.tag{color:#a78bfa;margin-bottom:20px}
+h1{font-size:clamp(38px,7vw,65px);line-height:1.2}
+h1 span,h2 span{color:#a78bfa}
+.hero p{color:#b8b8c8;max-width:600px;margin:22px auto}
+.btn{
+  display:inline-block;background:#8b5cf6;color:white;
+  padding:13px 27px;border-radius:8px;
+  text-decoration:none;margin:10px;
+}
+section{padding:85px 10%;text-align:center}
+h2{font-size:36px;margin-bottom:25px}
+.description{color:#b8b8c8;max-width:700px;margin:auto}
+.cards{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:22px;margin-top:35px;
+}
+.card{
+  background:#171725;padding:30px 20px;
+  border:1px solid #29283a;border-radius:14px;
+}
+.card h3{color:#a78bfa;margin-bottom:12px}
+.card p{color:#b8b8c8}
+.skills{margin-top:30px;color:#d8c8ff}
+.contact{background:#11111c}
+footer{padding:25px;text-align:center;color:#888}
+@media(max-width:600px){
+ nav{padding:18px 5%;flex-direction:column;gap:12px}
+ nav a{margin:0 7px;font-size:13px}
+ section{padding:65px 6%}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">MIZANUR.</div>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="hero" id="home">
+  <div class="tag">✦ WELCOME TO MY PORTFOLIO</div>
+  <h1>Hi, I'm <span>Mizanur Rahman</span></h1>
+  <h2>Professional Freelancer</h2>
+  <p>
+    I am a passionate freelancer dedicated to
+    providing quality digital services and helping
+    businesses grow.
+  </p>
+  <a class="btn" href="#contact">Hire Me →</a>
+  <a class="btn" href="#about">About Me</a>
+</div>
+
+<section id="about">
+  <h2>About <span>Me</span></h2>
+  <p class="description">
+    Hello! I'm Mizanur Rahman.
+    I am a dedicated freelancer who loves learning
+    new skills, working on creative projects and
+    delivering quality work.
+    My goal is to help clients achieve their goals
+    through professional service.
+  </p>
+</section>
+
+<section id="services">
+  <h2>My <span>Services</span></h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Digital Services</h3>
+      <p>Professional digital solutions for your needs.</p>
+    </div>
+    <div class="card">
+      <h3>Freelance Support</h3>
+      <p>Reliable support for your projects and business.</p>
+    </div>
+    <div class="card">
+      <h3>Creative Work</h3>
+      <p>Creative ideas and quality-focused work.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>My <span>Skills</span></h2>
+  <p class="description">
+    I believe in continuous learning, creativity,
+    communication and delivering quality work.
+  </p>
+  <div class="skills">
+    Creativity &nbsp; • &nbsp; Communication
+    &nbsp; • &nbsp; Problem Solving
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Let's Work <span>Together</span></h2>
+  <p class="description">
+    Have a project in mind? Let's discuss how
+    we can work together.
+  </p>
+  <a class="btn" href="mailto:YOUR_EMAIL@gmail.com">
+    Contact Me ✉
+  </a>
+</section>
+
+<footer>
+  © 2026 Mizanur Rahman. All Rights Reserved.
+</footer>
+
+</body>
+</html>
